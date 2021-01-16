@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Nhập số báo danh"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cambriab"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTextSBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số báo danh cần tra cứu"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/cambriab"
+        android:textSize="20sp"
+        android:background="@drawable/textview_nhap"
+        />
+    <Spinner
+        android:id="@+id/spinnerMonThi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinnerKhoaThi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/bt_traCuuNghe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_select"
+        android:text="Tra cứu"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/cambriab"
+        android:textColor="@color/white"
+        android:onClick="traCuuNghe"/>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/tableKetQua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbHoTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewHoTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbNgaySinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewNgaySinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbLop11"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewLop11"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbTruongPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewTruongPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbLyThuyet"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewLyThuyet"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbThucHanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewThucHanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbDiemTB"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewDiemTB"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbKetQua"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewKetQua"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView
+                    android:id="@+id/lbXepLoai"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/maunau"
+                    />
+                <TextView
+                    android:id="@+id/textViewXepLoai"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/cambriab"
+                    android:textColor="@color/black"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

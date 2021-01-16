@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edtBQDDTB12"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cambriab"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:hint="Nhập ĐTB cả năm 12"
+        />
+    <Spinner
+        android:id="@+id/spinnerBQDDienUuTien"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinnerBQDDiemKK"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerBQDTiLe"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        />
+
+    <TableLayout
+        android:id="@+id/table_HeGD_BQD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb_mienNN_BQD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="false"
+                android:fontFamily="@font/cambriab"
+                android:text="Miễn thi ngoại ngữ"
+                android:textColor="@color/maucam"
+                android:textSize="18sp" />
+            <CheckBox
+                android:id="@+id/cb_heGDPT_BQD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:fontFamily="@font/cambriab"
+                android:text="Hệ GDPT"
+                android:textColor="@color/maucam"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_tinhKetQua_BQDXetTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_select"
+        android:text="Xem kết quả"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/cambriab"
+        android:textColor="@color/white"
+        android:onClick="tinhKetQuaBQD"
+        android:drawableLeft="@drawable/calculator"/>
+
+    <TextView
+        android:id="@+id/txtKetQuaBQD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/cambriab"
+        android:textColor="@color/maudo"
+        />
+</LinearLayout>
